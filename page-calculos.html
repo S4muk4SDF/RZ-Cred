@@ -26,47 +26,51 @@
 
     <div id="main">
 
-        <div id="icon-voltar">
-            <a href="index.html"><button type="button" class="btn btn-light">Voltar</button></a>
-        </div>
+        <section>
+            <div id="sub-main">
 
-        <div id="logo">
-            <img src="src/img/coroa-png-fundo-transparente4.png" alt="RZ Cred">
+                <div class="card shadow-lg">
+                    <h2>PARCELA ATUAL</h2>
 
-            <h1>RZ CRED</h1>
-        </div>
+                    <section>
+                        <label for="">R$</label>
+                        <input type="number" name="" id="parcela-atual">
+                    </section>
+                </div>
+    
+                <div class="card shadow-lg">
+                    <h2>PARCELA FINAL</h2>
 
-        <div id="sub-main">
-            <div class="card shadow-lg">
-                <h1>PARCELA ATUAL</h1>
-
-                <section>
-                    <label>R$</label>
-                    <input type="number" id="parcela-atual">
-                </section>
-
+                    <section>
+                        <label for="">R$</label>
+                        <input type="number" name="" id="parcela-final">
+                    </section>
+                </div>
+    
             </div>
-
-            <div class="card shadow-lg">
-                <h1>PARCELA FINAL</h1>
-
-                <section>
-                    <label>R$</label>
-                    <input type="number" id="parcela-final">
-                </section>
+    
+            <div id="sub-main">
+    
+                <div class="card shadow-lg" id="card-troco">
+                    <h1>VALOR DE TROCO</h1>
+    
+                    <section>
+                        <h2>Sem Carência</h2>
+                        <h4 id="resultado-calculo-scarencia">R$0,00</h4>
+                    </section>
+                   
+                    <section>
+                        <h2>Com Carência</h2>
+                        <h4 id="resultado-calculo-ccarencia">R$0,00</h4>
+                    </section>
+                </div>
+    
             </div>
+        </section>
 
-            <div class="card shadow-lg">
-                <h1>VALOR DE TROCO</h1>
-
-                <h3 id="resultado-calculo">R$00,00</h3>
-
-            </div>
-
+        <div>
+            <button class="btn" onclick="calcFunction()">CALCULAR</button>
         </div>
-
-        <button type="button" id="btn-calcular" class="btn btn-success" onclick="calcFunction()">Calcular</button>
-
     </div>
 
     <script src="./src/js/index.js"></script>

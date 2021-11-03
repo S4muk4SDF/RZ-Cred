@@ -1,8 +1,10 @@
-let coeficiente = 0.02450;
+let coeficienteSemCarencia = 0.02450;
+let coeficienteComCarencia = 0.02600;
 
 let parcelaAtual = document.getElementById("parcela-atual");
 let parcelaFinal = document.getElementById("parcela-final");
-let resultadoHtml = document.getElementById("resultado-calculo");
+let resultadoHtmlSCarencia = document.getElementById("resultado-calculo-scarencia");
+let resultadoHtmlCCarencia = document.getElementById("resultado-calculo-ccarencia");
 
 
 function calcFunction () {
@@ -12,9 +14,19 @@ function calcFunction () {
     let subtracaoParcela = parcelaAtual - parcelaFinal;
     console.log(subtracaoParcela)
 
-    let resultadoFinal = subtracaoParcela / coeficiente;
+    let resultadoFinalSCarencia = subtracaoParcela / coeficienteSemCarencia;
+    console.log(resultadoFinalSCarencia)
 
-    resultadoFinal = Math.round(resultadoFinal * 100) / 100;
+    let resultadoFinalCCarencia = subtracaoParcela / coeficienteComCarencia;
+    console.log(resultadoFinalCCarencia)
 
-    resultadoHtml.innerHTML = `R$${resultadoFinal}`
+
+    resultadoFinalSCarencia = Math.round(resultadoFinalSCarencia * 100) / 100;
+    console.log(resultadoFinalCCarencia.typeof())
+    resultadoFinalCCarencia = Math.round(resultadoFinalCCarencia * 100) / 100;
+
+
+    resultadoHtmlSCarencia.innerHTML = `R$${resultadoFinalSCarencia}`
+    resultadoHtmlCCarencia.innerHTML = `R$${resultadoFinalCCarencia}`
+
 }

@@ -20,71 +20,56 @@
     background-color: rgb(226, 98, 23);
 }
 
-#icon-voltar {
+#main section {
     display: flex;
-    justify-content: flex-start;
-    margin: 0 auto 0 2rem;
 }
 
 #sub-main {
     display: flex;
-    justify-content: center;
-}
-
-#logo {
-    display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 3rem;
-}
-
-#logo img {
-    width: 250px;
-    height: 150px;
-}
-
-#logo h1 {
-    color: #F2EDD7;
-    font-weight: bold;
-    font-family: 'Lobster', cursive;
-    font-size: 4rem;
+    margin: 0 3rem;
 }
 
 .card {
     display: flex;
-    flex-direction: column;
-    align-items: center !important;
-    justify-content: center !important;
-    border-radius: 10px !important;
-    width: 350px;
-    height: 150px;
-    margin: 0 5rem;
-    background-color: white !important;
-}
-
-.card h1 {
-    color: black;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-}
-
-.card p {
-    width: 250px;
-    margin-top: 2rem;
-    display: flex !important;
-    justify-content: center !important;
-    color: black;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.btn-success {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1rem !important;
-    width: 200px;
+    width: 350px;
+    height: 150px;
+    margin: 3rem 0;
+}
+
+.card section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#card-troco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 480px;
+    margin: 3rem 0;
+}
+
+#card-troco h1 {
+    margin-bottom: 4rem;
+}
+
+#card-troco section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.btn {
     font-size: 3rem !important;
-    margin-top: 2rem;
+    color: chartreuse !important;
 }
